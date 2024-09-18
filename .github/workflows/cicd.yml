@@ -17,6 +17,6 @@ jobs:
      - name: build with docker
        run: docker build -t myapp .
      - name: tag image 
-       run: docker tag betrand1997 myapp:latest
+       run: docker tag myapp:latest betrand1997/myapp:latest
      - name: push image to docker hub 
-       run: docker images
+       run: docker push betrand1997/myapp:latest
