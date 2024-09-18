@@ -19,4 +19,4 @@ jobs:
      - name: tag image 
        run: docker tag betrand1997 myapp:latest
      - name: push image to docker hub 
-       run: docker push betrand1997/myapp:latest
+       run: docker images
